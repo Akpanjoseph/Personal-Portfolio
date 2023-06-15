@@ -17,14 +17,14 @@
         <nav class="container ">
 
             <!-- logo -->
-            <P class="logo"><span class="logo-block">Syntax </span> <span class="logo-text">Designer</span></P>
+            <P class="logo "><span class="logo-block">Syntax </span> <span class="logo-text">Designer</span></P>
 
 
             <!-- nav links -->
 
             <ul class="nav-links-container">
-                <p class="nav-link"><a href="" class=" ">Home</a></p>
-                <p class="nav-link"><a href="" class="">Projects</a></p>
+                <p class="nav-link"><a href="#home" class=" ">Home</a></p>
+                <p class="nav-link"><a href="#project" class="">Projects</a></p>
                 <p class="nav-link"><a href="#about-me" class="">About me</a></p>
                 <p class="nav-link"><a href="" class="">Testimonials</a></p>
 
@@ -52,7 +52,7 @@
     <main class=" ">
 
 
-        <section class="intro-container">
+        <section id="home" class="intro-container">
 
             <div class="intro-img">
                 <div class="my_picture">
@@ -68,7 +68,7 @@
 
                 <div>
                     <p class="text-4xl md:text-5xl font-thin mb-0">Frontend Engineer</p>
-                    <p class="mt-0 text-lg md:text-xl px-2 md:px-0">I design beautifull things in a grand not with
+                    <p class="mt-0 text-lg md:text-xl px-2 md:px-0">I design beautifull things in a grand style not with
                         pencils but <span class="font-bold">Syntax</span> </p>
                     <!-- contact btn -->
 
@@ -81,18 +81,19 @@
 
 
         <!-- soft stack -->
-        <section id="" class="mt-20 md:mt-40 py-10 text-center ">
-            <p class="text-left text-white  text-2xl font-thin mb-10 md:text-3xl "><span
-                    class="bg-slate-500 px-10 py-2 rounded-e-full md:px-20 border border-red-300"><span
-                        class="bg-white italic px-2 text-primary animate-pulse">$>__</span> Soft Stack </span> </p>
+        <section id="" class="mt-10 md:mt-20 py-10 text-center px-10">
 
+            <div class="">
+                <p>Skills</p>
+                <p class="font-bold text-3xl mb-4 ">Soft Skills</p>
+            </div>
             <div class="skill-section">
 
-                <div class="skill-card">
+                <div class="skill-card mt-3 ml-4">
                     <img src="./asserts/python.png" alt="" class="w-[30px]">
                     <p>Critical thinking</p>
-                    <p class="text-sm"><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum,
-                            suscipit.</small></p>
+                    <p class="text-sm"><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Rerum,suscipit.</small></p>
                 </div>
 
                 <div class="skill-card">
@@ -125,23 +126,23 @@
 
 
         <!-- about me -->
-        <section id="" class="mt-10 md:mt-30 py-10 text-center md:px-10 ">
-         
-
+        <section id="about-me" class="mt-10 md:mt-30 py-10 text-center md:px-10 ">
             <div class="about-me">
 
                 <div class="about-text">
                     <div class="">
                         <p>About</p>
-                        <p class="font-extralight text-4xl mb-4 ">About Me</p>
+                        <p class="font-bold text-3xl mb-4 ">About Me</p>
                     </div>
-                    <p class="text-md">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non incidunt aliquam ipsam vel soluta eos ipsum! Cupiditate hic aperiam minus facilis itaque fugiat harum nobis eum fuga odio quis, in iusto perspiciatis expedita labore sit sapiente nulla repellat! Ex, provident.
+                    <p class="text-sm">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non incidunt aliquam ipsam vel soluta
+                        eos ipsum! Cupiditate hic aperiam minus facilis itaque fugiat harum nobis eum fuga odio quis, in
+                        iusto perspiciatis expedita labore sit sapiente nulla repellat! Ex, provident.
                     </p>
                 </div>
 
                 <div class="about-skill-section">
-                    <img src="./asserts/react.png" alt="" class="w-[30px] md:w-[50px] pt-4">
+                    <img src="./asserts/react.png" alt="" class="w-[30px] md:w-[50px] mt-3 ml-4">
                     <img src="./asserts/python.png" alt="" class="w-[30px] md:w-[50px]">
                     <img src="./asserts/react.png" alt="" class="w-[30px] md:w-[50px]">
                     <img src="./asserts/python.png" alt="" class="w-[30px] md:w-[50px]">
@@ -150,14 +151,187 @@
                     <img src="./asserts/react.png" alt="" class="w-[30px] md:w-[50px]">
                     <img src="./asserts/python.png" alt="" class="w-[30px] md:w-[50px]">
                     <img src="./asserts/react.png" alt="" class="w-[30px] md:w-[50px]">
-                 
+
                 </div>
 
+            </div>
+        </section>
 
 
+        <!-- portoflio -->
+        <section id="project" class="mt-10 md:mt-30 py-10 text-center md:px-10 ">
+            <div class="">
+                <p>Recent Projects</p>
+                <p class="font-bold text-3xl mb-10 ">My Portfolio</p>
             </div>
 
+            <div class="project-section">
 
+                <div class="project-card">
+                    <img src="./asserts/email_ui.png" alt="" class="w-full md:w-[300px]">
+                    <div class="p-4">
+                        <p class="font-bold text-lg">project1</p>
+                        <p class="text-xs py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, corrupti ut veniam
+                            maxime .</p>
+
+                            <div class="project-links">
+                                <p ><a href="" class="flex"> <span> View project </span> <img src="./asserts/arrow-right2.png" alt="" class="px-1"></a></p>
+                                
+                                <p><a href="">GitHub</a></p>
+                            </div>
+                    </div>
+                </div>
+
+               
+                <div class="project-card">
+                    <img src="./asserts/project.jpg" alt="" class="w-full md:w-[300px]">
+                    <div class="p-4">
+                        <p class="font-bold text-lg">project2</p>
+                        <p class="text-xs py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, corrupti ut veniam
+                            maxime .</p>
+
+                           <div class="project-links">
+                                <p ><a href="" class="flex"> <span> View project </span> <img src="./asserts/arrow-right2.png" alt="" class="px-1"></a></p>
+                                
+                                <p><a href="">GitHub</a></p>
+                            </div>
+                    </div>
+                </div>
+
+               
+                <div class="project-card">
+                    <img src="./asserts/project.jpg" alt="" class="w-full md:w-[300px]">
+                    <div class="p-4">
+                        <p class="font-bold text-lg">project3</p>
+                        <p class="text-xs py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, corrupti ut veniam
+                            maxime .</p>
+
+                           <div class="project-links">
+                                <p ><a href="" class="flex"> <span> View project </span> <img src="./asserts/arrow-right2.png" alt="" class="px-1"></a></p>
+                                
+                                <p><a href="">GitHub</a></p>
+                            </div>
+                    </div>
+                </div>
+
+               
+                <div class="project-card">
+                    <img src="./asserts/project.jpg" alt="" class="w-full md:w-[300px]">
+                    <div class="p-4">
+                        <p class="font-bold text-lg">project4</p>
+                        <p class="text-xs py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, corrupti ut veniam
+                            maxime .</p>
+
+                           <div class="project-links">
+                                <p ><a href="" class="flex"> <span> View project </span> <img src="./asserts/arrow-right2.png" alt="" class="px-1"></a></p>
+                                
+                                <p><a href="">GitHub</a></p>
+                            </div>
+                    </div>
+                </div>
+
+               
+    
+                </div>
+
+               
+                <button class="mt-8 text-md  btn-resume "><a href="">GitHub</a></button>
+
+            </div>
+        </section>
+
+
+        <section id="project" class="mt-10 md:mt-30 py-10 text-center md:px-10 ">
+            <div class="">
+                <p>Clients Feedback</p>
+                <p class="font-bold text-3xl mb-10 ">Customer Testimonials</p>
+
+
+                <div class="project-section">
+
+                    <div class="review-card">
+                        <div>
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                        </div>
+
+                        <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia animi saepe labore incidunt eum perspiciatis accusantium necessitatibus dolorem sint dolore.</p>
+
+                        <div class="review-info">
+                            <div class="review-img"></div>
+                            <div class="pt-2">
+                                <p class="font-bold">Dianne Russell</p>
+                                <p>Starbucks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                        </div>
+
+                        <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia animi saepe labore incidunt eum perspiciatis accusantium necessitatibus dolorem sint dolore.</p>
+
+                        <div class="review-info">
+                            <div class="review-img"></div>
+                            <div class="pt-2">
+                                <p class="font-bold">Dianne Russell</p>
+                                <p>Starbucks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                        </div>
+
+                        <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia animi saepe labore incidunt eum perspiciatis accusantium necessitatibus dolorem sint dolore.</p>
+
+                        <div class="review-info">
+                            <div class="review-img"></div>
+                            <div class="pt-2">
+                                <p class="font-bold">Dianne Russell</p>
+                                <p>Starbucks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="review-card">
+                        <div>
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                            <img src="./asserts/Star 1.png" alt="" class="w-[20px]">
+                        </div>
+
+                        <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia animi saepe labore incidunt eum perspiciatis accusantium necessitatibus dolorem sint dolore.</p>
+
+                        <div class="review-info">
+                            <div class="review-img"></div>
+                            <div class="pt-2">
+                                <p class="font-bold">Dianne Russell</p>
+                                <p>Starbucks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </section>
 
