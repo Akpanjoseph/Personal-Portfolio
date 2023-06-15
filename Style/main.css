@@ -98,11 +98,6 @@
   border-end-end-radius: 9999px;
 }
 
-.rounded-s-full{
-  border-start-start-radius: 9999px;
-  border-end-start-radius: 9999px;
-}
-
 .border{
   border-width: 1px;
 }
@@ -147,16 +142,16 @@
   padding-bottom: 2rem;
 }
 
+.pt-4{
+  padding-top: 1rem;
+}
+
 .text-left{
   text-align: left;
 }
 
 .text-center{
   text-align: center;
-}
-
-.text-right{
-  text-align: right;
 }
 
 .text-2xl{
@@ -465,9 +460,22 @@ html{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.about-skill-section > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.about-skill-section{
+  padding-top: 2rem;
+}
+
 @media (min-width: 768px){
   .about-skill-section{
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:mt-40{
