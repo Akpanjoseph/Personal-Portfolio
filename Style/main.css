@@ -34,6 +34,11 @@
   }
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-0{
   margin-bottom: 0px;
 }
@@ -107,6 +112,24 @@
 
 .animate-pulse{
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .p-4{
@@ -396,6 +419,15 @@ html{
   align-items: center;
   justify-content: center;
   background-image: url('../asserts/bg.png');
+}
+
+@media (min-width: 768px){
+  .my_picture{
+    width: 450px;
+  }
+}
+
+.my_picture{
   background-size: cover;
   background-position: -50px 10px;
   background-repeat: no-repeat;
@@ -579,7 +611,66 @@ html{
   border: 1px #1C1E53 solid;
 }
 
+.user-info{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 768px){
+  .user-info{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.info-card{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 768px){
+  .info-card{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.user-info input , textarea{
+  width: 100%;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .user-info input , textarea{
+    width: 400px;
+  }
+}
+
+.user-info input , textarea{
+  border:#1C1E53 1px solid
+}
+
+textarea{
+  height: 5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  textarea{
+    width: 95%;
+  }
+
   .md\:mt-20{
     margin-top: 5rem;
   }
@@ -594,6 +685,10 @@ html{
 
   .md\:w-\[300px\]{
     width: 300px;
+  }
+
+  .md\:w-\[400px\]{
+    width: 400px;
   }
 
   .md\:w-\[50px\]{
