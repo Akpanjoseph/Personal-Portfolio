@@ -75,12 +75,16 @@
   margin-top: 2rem;
 }
 
-.block{
-  display: block;
-}
-
 .flex{
   display: flex;
+}
+
+.w-\[100px\]{
+  width: 100px;
+}
+
+.w-\[120px\]{
+  width: 120px;
 }
 
 .w-\[20px\]{
@@ -97,6 +101,10 @@
 
 .w-\[50px\]{
   width: 50px;
+}
+
+.w-\[90px\]{
+  width: 90px;
 }
 
 .w-full{
@@ -178,10 +186,6 @@
   text-align: center;
 }
 
-.text-right{
-  text-align: right;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -254,7 +258,7 @@ html{
   justify-content: space-between;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .container{
     margin-left: 0px;
     margin-right: 0px;
@@ -296,7 +300,7 @@ html{
   justify-content: space-evenly;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .nav-links-container{
     display: flex;
     justify-content: space-evenly;
@@ -332,7 +336,7 @@ html{
   color: rgb(28 30 83 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .btn{
     display: block;
   }
@@ -378,7 +382,7 @@ html{
   width: 23px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .menu-btn{
     display: none;
   }
@@ -395,7 +399,7 @@ html{
   padding-top: 5rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .intro-container{
     flex-direction: row;
   }
@@ -406,7 +410,7 @@ html{
   text-align: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .intro-text{
     width: 50%;
     text-align: left;
@@ -429,7 +433,7 @@ html{
   background-image: url('../asserts/bg.png');
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .my_picture{
     width: 450px;
   }
@@ -458,7 +462,7 @@ html{
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .skill-section{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -481,44 +485,53 @@ html{
 
 .about-me{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+@media (min-width: 1024px){
+  .about-me{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .about-text{
-  width: 60%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  width: 100%;
   text-align: left;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .about-text{
     width: 45%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
 .about-skill-section{
   display: grid;
-  width: 40%;
+  width: 100%;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  justify-content: center;
 }
 
 .about-skill-section > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .about-skill-section{
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .about-skill-section{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -533,7 +546,7 @@ html{
   padding-right: 1rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .project-section{
     grid-template-columns: repeat(4, minmax(0, 1fr));
     justify-content: space-evenly;
@@ -551,7 +564,7 @@ html{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .project-card{
     width: 300px;
   }
@@ -589,7 +602,7 @@ html{
   line-height: 1.25rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .review-card{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -624,7 +637,7 @@ html{
   justify-content: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .user-info{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -636,7 +649,7 @@ html{
   text-align: left;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .info-card{
     margin-left: 1rem;
     margin-right: 1rem;
@@ -656,7 +669,7 @@ html{
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .user-info input , textarea{
     width: 400px;
   }
@@ -671,56 +684,69 @@ textarea{
   width: 100%;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   textarea{
     width: 95%;
   }
 
-  .md\:mt-20{
+  .lg\:mt-20{
     margin-top: 5rem;
   }
 
-  .md\:w-\[100px\]{
+  .lg\:w-\[100px\]{
     width: 100px;
   }
 
-  .md\:w-\[150px\]{
-    width: 150px;
+  .lg\:w-\[30\%\]{
+    width: 30%;
   }
 
-  .md\:w-\[300px\]{
+  .lg\:w-\[300px\]{
     width: 300px;
   }
 
-  .md\:w-\[400px\]{
+  .lg\:w-\[400px\]{
     width: 400px;
   }
 
-  .md\:w-\[50px\]{
+  .lg\:w-\[50px\]{
     width: 50px;
   }
 
-  .md\:px-0{
+  .lg\:w-\[90px\]{
+    width: 90px;
+  }
+
+  .lg\:w-\[35\%\]{
+    width: 35%;
+  }
+
+  .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .md\:px-10{
+  .lg\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 
-  .md\:text-3xl{
+  .lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .md\:text-5xl{
+  .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
   }
 
-  .md\:text-xl{
+  .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
