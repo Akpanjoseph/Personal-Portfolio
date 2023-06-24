@@ -79,6 +79,10 @@
   display: flex;
 }
 
+.h-\[50px\]{
+  height: 50px;
+}
+
 .w-\[100px\]{
   width: 100px;
 }
@@ -148,6 +152,18 @@
   padding: 1rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
+.p-10{
+  padding: 2.5rem;
+}
+
+.p-8{
+  padding: 2rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -176,6 +192,11 @@
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pt-2{
@@ -697,12 +718,12 @@ textarea{
     width: 100px;
   }
 
-  .lg\:w-\[30\%\]{
-    width: 30%;
-  }
-
   .lg\:w-\[300px\]{
     width: 300px;
+  }
+
+  .lg\:w-\[35\%\]{
+    width: 35%;
   }
 
   .lg\:w-\[400px\]{
@@ -713,12 +734,16 @@ textarea{
     width: 50px;
   }
 
-  .lg\:w-\[90px\]{
-    width: 90px;
+  .lg\:w-\[350px\]{
+    width: 350px;
   }
 
-  .lg\:w-\[35\%\]{
-    width: 35%;
+  .lg\:w-\[70\%\]{
+    width: 70%;
+  }
+
+  .lg\:w-\[90\%\]{
+    width: 90%;
   }
 
   .lg\:px-0{
