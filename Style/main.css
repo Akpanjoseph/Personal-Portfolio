@@ -152,14 +152,6 @@
   padding: 1rem;
 }
 
-.p-6{
-  padding: 1.5rem;
-}
-
-.p-10{
-  padding: 2.5rem;
-}
-
 .p-8{
   padding: 2rem;
 }
@@ -192,11 +184,6 @@
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pt-2{
@@ -732,18 +719,6 @@ textarea{
 
   .lg\:w-\[50px\]{
     width: 50px;
-  }
-
-  .lg\:w-\[350px\]{
-    width: 350px;
-  }
-
-  .lg\:w-\[70\%\]{
-    width: 70%;
-  }
-
-  .lg\:w-\[90\%\]{
-    width: 90%;
   }
 
   .lg\:px-0{
